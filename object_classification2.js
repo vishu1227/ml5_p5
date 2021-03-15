@@ -39,9 +39,9 @@ function draw()
         strokeWeight(4);
         noFill();
         rect(obj.x,obj.y,obj.width,obj.height);
+
         // disable the outline
         noStroke();
-
         fill(255);
         textSize(24);
         text(obj.label,obj.x+10,obj.y+24)
