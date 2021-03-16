@@ -5,10 +5,19 @@ let value=0;
 let slider;
 let addButton;
 let trainButton;
+let saveButton;
 
 function modelReady()
 {
     console.log('Model is ready!');
+    predictor.load('model.json',customModelReady);
+}
+
+function customModelReady()
+{
+    console.log('Yes model is ready!');
+    label='model ready';
+    predictor.predict(gotResults);
 }
 
 function videoReady()
@@ -21,7 +30,7 @@ function whileTraining(loss)
     if(loss==null)
     {
         console.log('Training Complete');
-        predictor.predict(gotResults);    
+        predictor.predict(gotResults);
     }
     else
     {
@@ -63,6 +72,13 @@ function setup()
     trainButton=createButton('train');
     trainButton.mousePressed(()=>{
         predictor.train(whileTraining);
+    })
+
+
+    // to save the model
+    saveButton=createButton('save');
+    saveButton.mousePressed(()=>{
+        predictor.save();
     })
 }
 
