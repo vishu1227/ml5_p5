@@ -1,0 +1,114 @@
+{
+  "knnClassifier": {
+    "classDatasetMatrices": {
+      "0": {
+        "kept": true,
+        "isDisposedInternal": false,
+        "shape": [
+          19,
+          256
+        ],
+        "dtype": "float32",
+        "size": 4864,
+        "strides": [
+          256
+        ],
+        "dataId": {},
+        "id": 3730,
+        "rankType": "2",
+        "scopeId": 6824
+      },
+      "1": {
+        "kept": true,
+        "isDisposedInternal": false,
+        "shape": [
+          20,
+          256
+        ],
+        "dtype": "float32",
+        "size": 5120,
+        "strides": [
+          256
+        ],
+        "dataId": {},
+        "id": 218386,
+        "rankType": "2",
+        "scopeId": 460516
+      },
+      "2": {
+        "kept": true,
+        "isDisposedInternal": false,
+        "shape": [
+          23,
+          256
+        ],
+        "dtype": "float32",
+        "size": 5888,
+        "strides": [
+          256
+        ],
+        "dataId": {},
+        "id": 345057,
+        "rankType": "2",
+        "scopeId": 728235
+      },
+      "3": {
+        "kept": true,
+        "isDisposedInternal": false,
+        "shape": [
+          23,
+          256
+        ],
+        "dtype": "float32",
+        "size": 5888,
+        "strides": [
+          256
+        ],
+        "dataId": {},
+        "id": 512231,
+        "rankType": "2",
+        "scopeId": 1081560
+      }
+    },
+    "classExampleCount": {
+      "0": 19,
+      "1": 20,
+      "2": 23,
+      "3": 23
+    },
+    "labelToClassId": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3
+    },
+    "nextClassId": 4,
+    "exampleShape": [
+      1,
+      256
+    ],
+    "trainDatasetMatrix": {
+      "kept": true,
+      "isDisposedInternal": false,
+      "shape": [
+        85,
+        256
+      ],
+      "dtype": "float32",
+      "size": 21760,
+      "strides": [
+        256
+      ],
+      "dataId": {},
+      "id": 512403,
+      "rankType": "2",
+      "scopeId": 1081922
+    }
+  },
+  "mapStringToIndex": [
+    "left",
+    "right",
+    "Up",
+    "Down"
+  ]
+}
